@@ -1,3 +1,46 @@
+# Contact Form (Built with FormBuilder Plugin + Supabase)
+
+This project features a simple **Contact Form** with the following fields:
+
+- Full Name
+- Email Address
+- Message
+
+The form is built using a **FormBuilder plugin** and stores form submissions in **Supabase**.
+
+> ⚠️ **Note:** I only developed this Contact Form using the FormBuilder plugin and Supabase. I am **not responsible for the full form builder system or additional features** outside of this specific form.
+
+---
+
+## 💡 Features
+
+- Full Name, Email, and Message fields
+- Client-side validation
+- Stores data securely in Supabase
+- Built using a reusable FormBuilder plugin
+
+---
+
+## 🧱 Tech Stack
+
+- 🔧 **FormBuilder Plugin** – for dynamic form rendering
+- 🧬 **Supabase** – as the backend for storing submissions
+- ⚛️ **Nextjs (or specify your framework)** – frontend framework
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+ admin login 
+ email:john@gmail.com
+ password:john
+
+```bash
+git clone https://github.com/yourusername/contact-form-formbuilder
+cd contact-form-formbuilder
+
 # Payload Blank Template
 
 This template comes configured with the bare minimum to get started on anything you need.
