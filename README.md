@@ -33,8 +33,8 @@ The form is built using a **FormBuilder plugin** and stores form submissions in 
 
 ### 1. Clone the Repository
 
- npm install
- npm run dev
+ 1)npm install
+ 2)npm run dev
  
  admin login 
  email:john@gmail.com
