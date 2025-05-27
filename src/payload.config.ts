@@ -6,7 +6,7 @@ import path from 'path'
 import { buildConfig } from 'payload'
 import { fileURLToPath } from 'url'
 import sharp from 'sharp'
-
+import { formBuilderPlugin } from '@payloadcms/plugin-form-builder';
 import { Users } from './collections/Users'
 import { Media } from './collections/Media'
 
@@ -34,6 +34,17 @@ export default buildConfig({
   sharp,
   plugins: [
     payloadCloudPlugin(),
+    formBuilderPlugin({
+      // Optional: Customize available field types
+      fields: {
+        text: true,
+        textarea: true,
+        email: true,
+        select: true,
+        checkbox: true,
+        // Add more field types as needed
+      },
+    }),
     // storage-adapter-placeholder
   ],
 })

@@ -6,6 +6,8 @@ import { fileURLToPath } from 'url'
 
 import config from '@/payload.config'
 import './styles.css'
+import FormComponent from '@/components/FormComponent'
+
 
 export default async function HomePage() {
   const headers = await getHeaders()
@@ -16,8 +18,12 @@ export default async function HomePage() {
   const fileURL = `vscode://file/${fileURLToPath(import.meta.url)}`
 
   return (
-    <div className="home">
-      <div className="content">
+    <div className="">
+        <h1>Contact Form</h1>
+        <div>
+          <FormComponent formId="1"/>
+        </div>
+      {/* <div className="content">
         <picture>
           <source srcSet="https://raw.githubusercontent.com/payloadcms/payload/main/packages/ui/src/assets/payload-favicon.svg" />
           <Image
@@ -46,6 +52,15 @@ export default async function HomePage() {
           >
             Documentation
           </a>
+           <a
+            className="docs"
+            href=""
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Contact Us
+          </a>
+          
         </div>
       </div>
       <div className="footer">
@@ -53,7 +68,7 @@ export default async function HomePage() {
         <a className="codeLink" href={fileURL}>
           <code>app/(frontend)/page.tsx</code>
         </a>
-      </div>
+      </div> */}
     </div>
   )
 }
